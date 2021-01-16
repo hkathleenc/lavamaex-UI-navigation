@@ -20,9 +20,10 @@ import {
     url?: string;
   }
   
-  export class BasePage {
+  export class AutomatedElement {
     driver: WebDriver;
     url: string;
+    elementBy: By;
     /**
      *
      * @param {Options} options - optional paramaters for the base page object.
@@ -62,9 +63,9 @@ import {
      * waits for the identified element to be located and visible before returning it.
      * @param {By} elementBy - the locator for the element to return.
      */
-    async getElement(elementBy: By): Promise<WebElement> {
-      await this.driver.wait(until.elementLocated(elementBy));
-      let element = await this.driver.findElement(elementBy);
+    async getElement(): Promise<WebElement> {
+      await this.driver.wait(until.elementLocated(this.elementBy));
+      let element = await this.driver.findElement(this.elementBy);
       await this.driver.wait(until.elementIsVisible(element));
       return element;
     }
@@ -72,38 +73,35 @@ import {
      * clicks the given element after waiting for it
      * @param {By} elementBy - the locator for the element to click
      */
-    async click(elementBy: By): Promise<void> {
-      let element = await this.getElement(elementBy);
+    async click(): Promise<void> {
+      let element = await this.getElement();
       await this.driver.wait(until.elementIsEnabled(element));
       return await element.click();
     }
     /**
      * clears the given element after waiting for it, and then sends the provided keys
-     * @param {By} elementBy - the locator for the element to clear and sendKeys to
      * @param {any} keys - the string or list of keys to send
      */
-    async setInput(elementBy: By, keys: any): Promise<void> {
-      let input = await this.getElement(elementBy);
+    async setInput(keys: any): Promise<void> {
+      let input = await this.getElement();
       await this.driver.wait(until.elementIsEnabled(input));
       await input.clear();
       return input.sendKeys(keys);
     }
     /**
      * returns an element's text after waiting for it to be visible
-     * @param {By} elementBy - the locator of the element to get text from
      */
-    async getText(elementBy: By): Promise<string> {
-      let element = await this.getElement(elementBy);
+    async getText(): Promise<string> {
+      let element = await this.getElement();
       await this.driver.wait(until.elementIsEnabled(element));
       return element.getText();
     }
     /**
      * returns an element's attribute value after waiting for the element to be visible
-     * @param {By} elementBy - the locator of the element to get the value from
      * @param {string} attribute - the attribute to return the value from, such as 'value' or 'href'
      */
-    async getAttribute(elementBy: By, attribute: string): Promise<string> {
-      let element = await this.getElement(elementBy);
+    async getAttribute(attribute: string): Promise<string> {
+      let element = await this.getElement();
       await this.driver.wait(until.elementIsEnabled(element));
       return element.getAttribute(attribute);
     }
