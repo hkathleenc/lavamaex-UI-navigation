@@ -49,7 +49,7 @@
        * http://www.software-testing-tutorials-automation.com/2020/05/maximize-and-full-screen-window-using.html
        */
       async maxWindow() {
-        this.driver.manage().window().maximize();
+        await this.driver.manage().window().maximize();
       }
       /**
        * Pauses the driver for an amount of time determined by the user
