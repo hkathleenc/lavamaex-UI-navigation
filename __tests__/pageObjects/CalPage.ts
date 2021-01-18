@@ -14,7 +14,6 @@
 
  import { 
     AutomatedElement,
-    Button,
     AgendaButton,
     PinboardButton,
     MonthlyButton  
