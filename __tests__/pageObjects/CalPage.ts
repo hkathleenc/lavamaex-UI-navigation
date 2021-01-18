@@ -12,11 +12,19 @@
     WebElement,
   } from "selenium-webdriver";
 
-  import { AgendaButton, AutomatedElement } from "./index"
-  import { Button } from "./index"
+ import { 
+    AutomatedElement,
+    Button,
+    AgendaButton,
+    PinboardButton,
+    MonthlyButton  
+  } from "./index"
+
 
   export class CalPage extends AutomatedElement {
       ag_button: AgendaButton;
+      pin_button: PinboardButton;
+      month_button: MonthlyButton;
     
      
       constructor() {
