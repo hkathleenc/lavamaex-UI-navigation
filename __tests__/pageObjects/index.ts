@@ -9,3 +9,6 @@ export { AgendaButton }
 
 import { PinboardButton } from "./PinboardButton"
 export { PinboardButton }
+
+import { MonthlyButton } from "./MonthlyButton"
+export { MonthlyButton }
