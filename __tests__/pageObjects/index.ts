@@ -12,3 +12,6 @@ export { PinboardButton }
 
 import { MonthlyButton } from "./MonthlyButton"
 export { MonthlyButton }
+
+import { CalPage } from "./CalPage"
+export { CalPage }
