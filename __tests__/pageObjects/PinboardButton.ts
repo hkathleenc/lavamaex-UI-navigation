@@ -11,7 +11,7 @@ import {
   import { Button } from "./index"
 
   export class PinboardButton extends Button {
-      locator: By = By.css('#tkf-body > div > div > div.viewerArea__nav.ng-scope > div > div > div.navbar-collapse.collapse > div > ul > li.viewer__navbar__fullSwitcher > div > a:nth-child(3)');
+      locator: By = By.css('#tkf-body > div > div > div.viewerArea__nav.ng-scope > div > div > div.navbar-collapse.collapse > div > ul > li.viewer__navbar__fullSwitcher > div > a:nth-child(1)');
       constructor() {
           super();
       }
