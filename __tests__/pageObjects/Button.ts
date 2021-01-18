@@ -12,8 +12,9 @@ import {AutomatedElement} from "./index"
 export class Button extends AutomatedElement {
     // Button's locator
     locator: By;
-    constructor() {
+    constructor(locatorParam: By) {
         super();
+        this.locator = locatorParam;
     }
 
     /**
