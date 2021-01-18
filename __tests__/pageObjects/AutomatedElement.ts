@@ -7,7 +7,7 @@ import {
     WebElement,
   } from "selenium-webdriver";
   
-  const fs = require("fs");
+  import fs = require("fs");
   const chromedriver = require("chromedriver");
   const geckodriver = require("geckodriver");
   
