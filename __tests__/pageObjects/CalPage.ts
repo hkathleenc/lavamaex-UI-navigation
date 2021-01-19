@@ -21,23 +21,23 @@
 
 
   export class CalPage extends AutomatedElement {
-      url: string = "https://lavamaex.org/ourcalendar";
-      logo: By = By.xpath("//*[@class = 'Mobile-bar-branding-logo']");
-      // Page buttons
-      ag_button: AgendaButton;
-      pin_button: PinboardButton;
-      month_button: MonthlyButton;
+    url: string = "https://lavamaex.org/ourcalendar";
+    logo: By = By.xpath("//*[@class = 'Mobile-bar-branding-logo']");
+    // Page buttons
+    ag_button: AgendaButton;
+    pin_button: PinboardButton;
+    month_button: MonthlyButton;
     
      
-      constructor() {
-          super();
-      }
+    constructor() {
+        super();
+    }
 
-      /**
-       * Navigates to LavaMaex's calendar web page. 
-       * Then waits for the organization's logo to load.
-       */
-      async navigate() {
+    /**
+    * Navigates to LavaMaex's calendar web page. 
+    * Then waits for the organization's logo to load.
+    */
+    async navigate() {
         await this.driver.get(this.url);
         await this.driver.wait(
           until.elementIsEnabled(await this.getElement(this.logo))
@@ -58,4 +58,13 @@
       sleep(ms: number) {
         return new Promise( resolve => setTimeout(resolve, ms));
       }
+      
+    /**
+    * Instructs the browser to wait for an element to load.
+    */
+    async waitToLoad(elementBy: By) {
+        await this.driver.wait(
+        until.elementIsEnabled(await this.getElement(elementBy))
+        );
+    }
   }
