@@ -51,6 +51,7 @@ import {
      * navigates to the url passed in, or to the one stored on the page object
      * @param {string} url - the url to navigate to, unless you wish to use the page's defined base url
      */
+    
     async navigate(url?: string): Promise<void> {
       if (url) return await this.driver.get(url);
       else if (this.url) return await this.driver.get(this.url);
@@ -59,6 +60,7 @@ import {
           "BasePage.navigate() needs a URL defined on the page object, or one passed in. No URL was provided."
         );
     }
+    
     /**
      * waits for the identified element to be located and visible before returning it.
      * @param {By} elementBy - the locator for the element to return.
@@ -66,7 +68,7 @@ import {
     async getElement(elementBy: By): Promise<WebElement> {
       await this.driver.wait(until.elementLocated(elementBy));
       let element = await this.driver.findElement(elementBy);
-      await this.driver.wait(until.elementIsVisible(element));
+      await this.driver.wait(until.elementIsEnabled(element));
       return element;
     }
     /**
