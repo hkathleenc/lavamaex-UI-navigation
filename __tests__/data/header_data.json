@@ -1,0 +1,44 @@
+[
+    {
+        "buttonXPath": "//a[@class='Header-branding']",
+        "destURL": "https://lavamaex.org/",
+        "buttonName": "Home Logo",
+        "destPage": "Home"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='Who We Are']",
+        "destURL": "https://lavamaex.org/who-we-are",
+        "buttonName": "Who We Are (Header)",
+        "destPage": "Who We Are"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='Impact']",
+        "destURL": "https://lavamaex.org/impact",
+        "buttonName": "Impact (Header)",
+        "destPage": "Impact"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='Programs']",
+        "destURL": "https://lavamaex.org/programs",
+        "buttonName": "Programs (Header)",
+        "destPage": "Programs"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='How To Help']",
+        "destURL": "https://lavamaex.org/get-involved",
+        "buttonName": "How To Help (Header)",
+        "destPage": "How To Help"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()=Press]",
+        "destURL": "https://lavamaex.org/press",
+        "buttonName": "Press (Header)",
+        "destPage": "Press"
+
+    }
+]

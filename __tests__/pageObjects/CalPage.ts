@@ -22,7 +22,8 @@
 
   export class CalPage extends AutomatedElement {
     url: string = "https://lavamaex.org/ourcalendar";
-    logo: By = By.xpath("//*[@class = 'Mobile-bar-branding-logo']");
+    logo: By = By.css('img.Mobile-bar-branding-logo');
+    eventsHeader: By = By.xpath('//*[@id="tkf-body"]/div/div/div[3]/ui-view/div/div[1]/div[2]/span/span[1]');
     // Page buttons
     ag_button: AgendaButton;
     pin_button: PinboardButton;
@@ -40,7 +41,7 @@
     async navigate() {
         await this.driver.get(this.url);
         await this.driver.wait(
-          until.elementIsEnabled(await this.getElement(this.logo))
+          until.elementIsVisible(await this.getElement(this.logo))
         );
       }
       /**
@@ -55,7 +56,7 @@
        * Pauses the driver for an amount of time determined by the user
        * Credit: Steven Cooper (project: g1p1-1)
        */
-      sleep(ms: number) {
+      async sleep(ms: number) {
         return new Promise( resolve => setTimeout(resolve, ms));
       }
       
@@ -68,3 +69,5 @@
         );
     }
   }
+
+  

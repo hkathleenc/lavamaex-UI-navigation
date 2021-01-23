@@ -81,6 +81,11 @@ import {
       return await element.click();
     }
     /**
+     * 
+     * @param elementBy;
+     * @param keys 
+     */
+    /**
      * clears the given element after waiting for it, and then sends the provided keys
      * @param {By} elementBy - the locator for the element
      * @param {any} keys - the string or list of keys to send
@@ -128,4 +133,30 @@ import {
         }
       );
     }
+    /**
+       * Maximizes a web page.
+       * NOTE: This uses code from the web site:
+       * http://www.software-testing-tutorials-automation.com/2020/05/maximize-and-full-screen-window-using.html
+       */
+      async maxWindow() {
+        await this.driver.manage().window().maximize();
+      }
+      /**
+       * Pauses the driver for an amount of time determined by the user
+       * Credit: Steven Cooper (project: g1p1-1)
+       */
+      async sleep(ms: number) {
+        return new Promise( resolve => setTimeout(resolve, ms));
+      }
+      
+    /**
+    * Instructs the browser to wait for an element to load.
+    */
+    async waitToLoad(elementBy: By) {
+        await this.driver.wait(
+        until.elementIsEnabled(await this.getElement(elementBy))
+        );
+    }
   }
+    
+  

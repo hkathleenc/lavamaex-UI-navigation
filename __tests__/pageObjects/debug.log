@@ -1,0 +1,21 @@
+[0121/161138.770:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[0122/115239.444:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.448:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.448:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/115239.450:ERROR:exception_snapshot_win.cc(99)] thread ID 33712 not found in process
+[0122/115239.493:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.494:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/115239.495:ERROR:exception_snapshot_win.cc(99)] thread ID 33888 not found in process
+[0122/115239.498:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.498:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.498:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.498:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.499:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.499:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/115239.499:ERROR:exception_snapshot_win.cc(99)] thread ID 33964 not found in process
+[0122/115239.509:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.511:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.511:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.511:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0122/115239.511:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0122/115239.511:ERROR:exception_snapshot_win.cc(99)] thread ID 34028 not found in process
