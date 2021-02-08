@@ -14,8 +14,7 @@ import {
     PinboardButton,
     MonthlyButton,
     CalPage,
-    SiteNavigation,
-    NavButton
+    SiteNavigation
 } from "./pageObjects/index"
 
 import * as navButtons from "./data/demo_data.json"
@@ -92,9 +91,6 @@ describe("Early stages work", () => {
                 }
             }
         }
-
-
-        
 
     
         let whoWeAre:By = By.xpath("//a[@class='Header-nav-item' and text()='Who We Are']");
