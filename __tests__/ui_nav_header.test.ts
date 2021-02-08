@@ -22,12 +22,19 @@ The program creates six tests, simulating a user navigating from:
 
     Home to About
     Home to Contact 
+
     About to Home
-    etc.
+    About to Contact
+
+    Contact to Home
+    Contact to About
+
 
 The program uses nested for loops to iterate through a circular array of the button .JSON objects.
-To increase efficiency, it does not backtrack, taking successively larger steps from element
-to element. The sequence of tests looks like this:
+To increase efficiency, it does not backtrack. It takes successively larger steps from element
+to element. 
+
+The sequence of tests looks like this:
 
     Array:
         | Home | About | Contact |
@@ -107,6 +114,7 @@ describe("Header Navigation Buttons Work", () => {
             // Populate the string describing the test about to be executed. 
             /* For example, if we are testing navigation from the home to about page using the
                about button, the case description will be:
+               
                 "Click: 'About' button on 'Home' Page.
                          Leads to: 'About' Page."
             */
