@@ -119,10 +119,13 @@ describe("Header Navigation Buttons Work", () => {
                 await page.getElement(navButtonBy);
                 await page.click(navButtonBy);
                 await page.sleep(3000);
-                // Update comparison URL strings
+                // Update strings to compare actual vs. expected results
+                // set curURL to the URL we have actually navigated to
                 curURL = await page.driver.getCurrentUrl();
+                // set goalURL to the destination URL of the button we just pushed (where we expected
+                // to navigate)
                 goalURL = navButtons[index % length].destURL;
-                // Compare the URL we have navigated to against the URL we have actually navigated to.
+                // Compare actual vs. expected URLs.
                 expect(curURL).toBe(goalURL);
             });
             // If clicking the button did NOT result in navigating the to correct page, navigate to 
