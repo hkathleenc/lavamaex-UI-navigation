@@ -14,20 +14,6 @@
 
     },
     {
-        "buttonXPath": "//a[@class='Header-nav-item' and text()='Impact']",
-        "destURL": "https://lavamaex.org/impact",
-        "buttonName": "Impact (Header)",
-        "destPage": "Impact"
-
-    },
-    {
-        "buttonXPath": "//a[@class='Header-nav-item' and text()='Programs']",
-        "destURL": "https://lavamaex.org/programs",
-        "buttonName": "Programs (Header)",
-        "destPage": "Programs"
-
-    },
-    {
         "buttonXPath": "//a[@class='Header-nav-item' and text()='How To Help']",
         "destURL": "https://lavamaex.org/get-involved",
         "buttonName": "How To Help (Header)",
@@ -40,5 +26,18 @@
         "buttonName": "Press (Header)",
         "destPage": "Press"
 
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='Impact']",
+        "destURL": "https://lavamaex.org/impact",
+        "buttonName": "Impact (Header)",
+        "destPage": "Impact"
+
+    },
+    {
+        "buttonXPath": "//a[@class='Header-nav-item' and text()='Programs']",
+        "destURL": "https://lavamaex.org/programs",
+        "buttonName": "Programs (Header)",
+        "destPage": "Programs"
     }
 ]
