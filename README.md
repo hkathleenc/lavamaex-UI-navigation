@@ -1,12 +1,18 @@
-# DevMountain Solo Capstone Project
+# DevMountain Solo Capstone Project: Automated Functional Testing
 
-# Automated Functional Testing of UI Navigation 
+This repository houses code for automated tests focusing on Lavamaex's navigation UI. 
 
-# Website: Lavamaex.org
+However, given correct data, these tests could be used to test UI navigation using header and
+footer links on most websites.
 
-This repository houses code for testing the header and footer navigation UI for LavaMaex.org.
+# Features Tested
+
+UI Navigation: Header and Footer Links
 
 This project sets up tests that verify whether header and footer links navigate to their correct pages. 
+
+
+# Test Design
 
 The tests accept data from a .JSON file containing information representing UI navigation buttons.
 
