@@ -21,9 +21,13 @@ This project sets up tests that verify whether header and footer links navigate 
 The tests accept data from a .JSON file containing information representing UI navigation buttons.
 
 The buttons are represented with the following data:
+
     1. The button's xPath
+ 
     2. The button's destination URL
+    
     3. The button's displayed name ("Home", "Who We Are". etc.)
+    
     4. The name of the destination page (this is usually the same as the button's displayed name, 
            but not always.)
 
