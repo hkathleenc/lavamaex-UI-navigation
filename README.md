@@ -5,6 +5,10 @@ This repository houses code for automated tests focusing on Lavamaex's navigatio
 However, given correct data, these tests could be used to test UI navigation using header and
 footer links on most websites.
 
+# Stack
+
+Code is implemented using Node.js, Jest, TypeScript and Selenium.
+
 # Features Tested
 
 UI Navigation: Header and Footer Links
