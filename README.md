@@ -1,5 +1,10 @@
-# lavamaex-calendar
-This houses code for testing the header and footer navigation UI for LavaMaex.org.
+# DevMountain Solo Capstone Project
+
+# Automated Functional Testing of UI Navigation 
+
+# Website: Lavamaex.org
+
+This repository houses code for testing the header and footer navigation UI for LavaMaex.org.
 
 This project sets up tests that verify whether header and footer links navigate to their correct pages. 
 
