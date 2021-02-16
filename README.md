@@ -12,7 +12,7 @@ The buttons are represented with the following data:
     4. The name of the destination page (this is usually the same as the button's displayed name, 
            but not always.)
 
-The program creates tests simulating a user navigating:
+The test files create tests simulating a user navigating:
     TO each accepted button's destination page, 
     FROM every other accepted button's destination page.
 
